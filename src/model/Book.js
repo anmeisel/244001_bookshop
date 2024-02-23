@@ -1,5 +1,5 @@
 export default class Book {
-    constructor(id, title, author, image, releaseDate, shortBio, longBio, discount, price) {
+    constructor(id, title, author, image, releaseDate, shortBio, longBio, discount, price, genre) {
         this.id = id
         this.title = title
         this.author = author
@@ -9,5 +9,6 @@ export default class Book {
         this.longBio = longBio
         this.discount = discount
         this.price = price
+        this.genre = genre
     }
 }

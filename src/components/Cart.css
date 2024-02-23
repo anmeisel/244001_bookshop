@@ -13,7 +13,7 @@
 .items-container, .cart {
     flex: 1;
     height: calc(100vh - 6em - 4px);
-    padding: 3em;
+    padding: 5em 3em 3em 3em;
     overflow-y: scroll;
 }
 
@@ -104,9 +104,47 @@ button.cart-button, button.cart-button-remove{
 .quantity {
     margin-right: 0.5em;
     font-weight: bold;
+    margin-bottom: calc(0.5em + 2px);
 }
 
 .total {
     text-align: left;
     margin-left: 0.5em;
+}
+
+.basket-button, .search-bar {
+    position: absolute;
+    margin: 1em;
+    border-width: 2px;
+    padding: 1em;
+    border-radius: 3em;
+    background-color: rgba(0, 128, 0, 0.5);
+    font-size: 1rem;
+}
+
+.basket-button:hover, .search-bar:hover {
+    background-color: rgba(0, 128, 0, 1);
+}
+
+.basket-button {
+    top: 0;
+    right: 0;
+    cursor: pointer;
+}
+
+.search-bar {
+    top: 0;
+    left: 0;
+    cursor: default;
+}
+
+.search-bar select {
+    font-size: 1rem;
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+}
+
+select:focus {
+    outline:0
 }
