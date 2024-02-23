@@ -1,0 +1,112 @@
+.items-container {
+    text-align: left;
+    background-color: rgb(114, 190, 114);
+    border: 2px solid orangered;
+}
+
+.header {
+    font-size: 2em;
+    margin-bottom: 0.5em;
+    text-align: center;
+}
+
+.items-container, .cart {
+    flex: 1;
+    height: calc(100vh - 6em - 4px);
+    padding: 3em;
+    overflow-y: scroll;
+}
+
+.book-box-container {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: flex-start;
+}
+
+.book-box {
+    flex: 1;
+    flex-basis: 21%;
+    margin: 0.5em;
+    border: 2px solid orangered;
+    padding: 1em;
+    align-self:flex-start;
+    max-width: 30%;
+    border-radius: 3em;
+}
+
+.book-info, .chosen-item {
+    margin: 0.5em;
+}
+
+.chosen-item {
+    text-align: left;
+}
+
+.cart-info {
+    margin-bottom: 2em;
+}
+
+.cart-button:hover {
+    background-color: green;
+}
+
+.cart-button-remove:hover {
+    background-color: red;
+}
+
+.cart {
+    background-color:gainsboro;
+    flex: 0.25;
+    border-top: 2px solid orangered;
+    border-right: 2px solid orangered;
+    border-bottom: 2px solid orangered;
+}
+
+button.cart-button, button.cart-button-remove{
+    background-color: transparent;
+    color: black;
+    padding: 0.25em 0.5em 0.25em 0.5em;
+    border-radius: 5em;
+    font-size: 1em;
+    cursor: pointer;
+}
+
+.img {
+    width: 13vw;
+}
+
+.img img {
+    width: 100%;
+    border: 2px solid green;
+}
+
+.book-info {
+    margin: 0.5em 0 0.5em 0;
+}
+
+.summary {
+    font-size: 0.85em;
+    /* font-style: italic; */
+    display: inline;
+    vertical-align: top;
+}
+
+.book-info span, .total span {
+    font-size: 0.75em;
+    vertical-align: top;
+}
+
+.quantity-container div {
+    display: inline-block;
+    vertical-align: top;
+}
+
+.quantity {
+    margin-right: 0.5em;
+    font-weight: bold;
+}
+
+.total {
+    text-align: left;
+    margin-left: 0.5em;
+}
