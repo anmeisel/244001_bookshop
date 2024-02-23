@@ -60,7 +60,9 @@ function App() {
 
   const filteredBooks = selectedGenre === "Everything" ? books : books.filter(book => book.genre.includes(selectedGenre));
 
-  const uniqueGenres = [...new Set(books.flatMap(book => book.genre))];
+  const uniqueGenres = [...new Set(books.flatMap(book => book.genre))]
+  // Set: puts genres array into Set and removes any duplicate genres
+  // ...: set is a new array
 
   return (
     <div className="App">
